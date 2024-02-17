@@ -1,0 +1,11 @@
+[Unit]
+Description= Script for Notification
+
+[Service]
+ExecStart=/usr/bin/python3 /home/medaminbl/Desktop/izr-web-server/notifyPrayer.py
+WorkingDirectory=/home/medaminbl/Desktop/izr-web-server
+Restart=always
+User=izr
+
+[Install]
+WantedBy=multi-user.target
